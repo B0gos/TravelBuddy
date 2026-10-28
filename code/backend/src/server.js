@@ -31,8 +31,8 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static("public"));
 
 // Example API endpoint
-app.get("/api/example", (req, res) => {
-  res.json({ message: "Hello from your API!" });
+app.get("/api/test", (req, res) => {
+  res.json({ message: "Message from server" });
 });
 
 app.listen(PORT, () => console.log(`Server listening on ${PORT}`));
